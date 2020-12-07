@@ -1,0 +1,17 @@
+.current-account{
+  font-size: 0.8em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.current-account__border{
+  border: solid 1px lightgray;
+  border-radius: 4px;
+  padding: 0.2em;
+}
+.current-account__separator{
+  color: gray;
+}
+.current-account__separator_hide{
+  display: none;
+}

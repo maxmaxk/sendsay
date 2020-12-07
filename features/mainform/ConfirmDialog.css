@@ -1,0 +1,27 @@
+.confirm-dialog{
+  position: absolute;
+  width: 300px;
+  height: 64px;
+  top: 50%;
+  left: 50%;
+  margin-left: -150px;
+  margin-top: -32px;
+  background-color: lightgray;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.confirm-dialog_hide{
+  display: none;
+}
+.confirm-dialog__header{
+  background-color: red;
+  color: white;
+  margin-bottom: 10px;
+
+}
+.confirm-dialog__button-yes{
+  margin-right: 2px;
+}
+.confirm-dialog__button-no{
+  margin-left: 2px;
+}

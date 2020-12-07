@@ -1,0 +1,70 @@
+.header{
+  --background-color: #EEE;
+  background-color: var(--background-color);
+  display: flex;
+  border-bottom: solid 1px lightgray;
+}
+.app-logo{
+  background-image: url("../../files/logo.svg");
+  background-repeat: no-repeat;
+  margin-left: 0.5em;
+  margin-right: 1em;
+  flex: none;
+}
+.container{
+  flex: 1;
+  display: flex;
+  height: 1.5em;
+  margin-top: 4px;
+}
+.app-caption{
+  text-align: left;
+  font-size: 1em;
+  flex: none;
+}
+.dummy{
+  flex: 1;
+}
+.current-account{
+  flex: none;
+  margin-right: 1em;
+}
+.logout-button{
+  flex: none;
+  display: flex;
+  border: solid 1px var(--background-color);
+  cursor: pointer;
+  font-size: 0.8em;
+  background-image: url("../../files/logout-icon.svg");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: bottom;
+  padding-right: 2em;
+  margin-right: 1.2em;
+}
+.logout-button:hover{
+  color: var(--button-color1);
+  background-position-y: top;
+}
+.fullscreen-button{
+  flex: none;
+  background-image: url("../../files/fullscreen-on.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  border: solid 1px var(--background-color);
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.2em;
+  cursor: pointer;
+}
+.fullscreen-button_off{
+background-image: url("../../files/fullscreen-off.svg");
+}
+.fullscreen-button:hover{
+  background-position: top;
+}
+.logout-button:focus,.fullscreen-button:focus{
+  outline: none;
+  border: solid 1px var(--button-color1);
+  border-radius: 4px;
+}

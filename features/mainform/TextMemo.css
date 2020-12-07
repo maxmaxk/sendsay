@@ -1,0 +1,36 @@
+.textmemo{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  min-width: 640px;
+  min-height: 520px;
+}
+.textmemo_left{
+  margin-left: 0.5em;
+}
+.textmemo_right{
+  margin-right: 0.5em;
+}
+.textmemo__caption{
+  text-align: left;
+  font-size: 0.8em;
+  color: gray;
+}
+.textmemo__caption_invalid{
+  color: red;
+}
+.textmemo__viewer{
+  border: solid 1px lightgray;
+  border-radius: 4px;
+  margin-bottom: 0.5em;
+  resize: none;
+  flex: 1;
+}
+.textmemo__viewer_invalid{
+  border: solid 2px red;
+}
+.textmemo__viewer:focus{
+  outline: none;
+  border: solid 1px var(--button-color1);
+}

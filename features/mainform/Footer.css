@@ -1,0 +1,70 @@
+.footer{
+  background-color: white;
+}
+.footer-container{
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  margin-top: 0.5em;
+  height: 2em;
+}
+.request-button-container{
+  flex: 1;
+  display: flex;
+  margin-left: 0.5em;
+}
+.request-button{
+  cursor: pointer;
+  background: linear-gradient(180deg, var(--button-color1) 0%, var(--button-color2) 100%);
+  color: white;
+  border-radius: 5px;
+  border: solid 1px lightgray;
+  width: 100px;
+
+}
+.request-button_waiting{
+  background-image:url("../../files/send-waiting.svg");
+  background-repeat: no-repeat;
+  font-size: 0px;
+}
+.request-button:focus{
+  outline: none;
+  box-shadow: 1px 1px 5px 0px var(--button-color1);
+  border: solid 1px var(--button-color1);
+}
+.request-button:hover{
+  filter: brightness(105%);
+}
+.github-link-container{
+  flex: 1;
+}
+.github-link-footer{
+  font-size: 0.8em;
+  line-height: 2.7em;
+}
+.format-button-container{
+  flex: 1;
+  display: flex;
+  flex-direction: row-reverse;
+  margin-right: 0.5em;
+}
+.format-button{
+  border: solid 1px white;
+  background-color: white;
+  cursor: pointer;
+  font-size: 0.8em;
+  background-image: url("../../files/format-icon.svg");
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-position-y: bottom;
+  padding-left: 2em;
+}
+.format-button:hover{
+  background-position-y: top;
+  color: var(--button-color1);
+}
+.format-button:focus{
+  outline: none;
+  border: solid 1px var(--button-color1);
+  border-radius: 4px;
+}

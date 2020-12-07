@@ -1,0 +1,24 @@
+.splitter-layout{
+  position: relative;
+  border-bottom: solid 1px lightgray;
+}
+.splitter-layout>.layout-splitter{
+  width: 7px;
+  background-color: white;
+  background-image: url("../../files/splitter-icon.svg");
+  background-repeat: no-repeat;
+  background-position-x: left;
+  background-position-y: center;
+  cursor: pointer;
+}
+.splitter-layout>.layout-splitter:hover{
+  background-position-x: right;
+  background-color: white;
+}
+.splitter-layout>.layout-splitter:active{
+  cursor: col-resize;
+}
+.layout-pane{
+  background-color: white;
+  display: flex;
+}

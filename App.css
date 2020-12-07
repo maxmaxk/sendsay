@@ -1,0 +1,5 @@
+.App {
+  text-align: center;
+  --button-color1:          rgba(64,160,255,1);
+  --button-color2:          rgba(70,130,255,1);
+}

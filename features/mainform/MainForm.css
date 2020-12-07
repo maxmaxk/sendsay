@@ -1,0 +1,25 @@
+body{
+  height: 100vh;
+}
+#root, .App, .mainform{
+  height: 100%;
+}
+.mainform{
+  display: flex;
+  flex-direction: column;
+}
+.header{
+  height: 2em;
+  flex: none;
+}
+.history{
+  height: 2em;
+  flex: none;
+}
+.viewer{
+  flex: 1;
+}
+.footer{
+  height: 3em;
+  flex: none;
+}

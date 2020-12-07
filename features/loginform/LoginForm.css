@@ -1,0 +1,167 @@
+body{
+  background-color: #EEE;
+}
+.login{
+
+  --err-background-color:   #F6C2B7;
+  --err-color:              maroon;
+
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  top: 50%;
+  left: 50%;
+  margin-left: -200px;
+  margin-top: -200px;
+}
+.app-logo-container{
+  display: flex;
+  justify-content: center;
+}
+.app-logo{
+  height: 30px;
+  width: 70px;
+  background-image: url("../../files/logo.svg");
+  background-repeat: no-repeat;
+}
+.login-menu{
+  background-color: #FFF;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+  padding: 5%;
+}
+.app-caption{
+  text-align: left;
+  margin-bottom: 0.5em;
+  font-size: 1.25em;
+}
+.login-menu-errmessage{
+  background-color: var(--err-background-color);
+  border-radius: 5px;
+  color: var(--err-color);
+  padding: 0.5em;
+  text-align: left;
+  display: flex;
+}
+.login-menu-errmessage_hide{
+  display: none;
+}
+.login-menu-errmessage__smile{
+  width: 10%;
+  font-size: 1.25em;
+  background-image: url("../../files/sadsmile.svg");
+  background-repeat: no-repeat;
+  margin-top: 0.1em;
+}
+.login-menu-errmessage__textcontainer{
+  width: 90%;
+}
+.login-menu-errmessage__text{
+  font-size: 0.75em;
+  overflow-wrap: break-word;
+}
+.login-menu-item__help{
+  background-color: var(--err-background-color);
+  border-radius: 5px;
+  color: var(--err-color);
+  padding: 0.75em;
+  text-align: left;
+}
+.login-menu-item__help_hide{
+  display: none;
+}
+.login-menu-item-labelcontainer{
+  display: flex;
+}
+.login-menu-item__label{
+  text-align: left;
+  width: 50%;
+  font-size: 0.9em;
+  color: black;
+}
+.login-menu-item__label_invalid{
+  color: red;
+}
+.login-menu-item__optionlabel{
+  width: 50%;
+  position: relative;
+}
+.login-menu-item__optionlabel>span{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  font-size: 0.6em;
+}
+.login-menu-item__input{
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: solid 1px lightgray;
+  margin-bottom: 0.75em;
+  height: 2em;
+  padding-left: 0.5em;
+}
+.login-menu-item__input:hover{
+  border: solid 1px #BBB;
+}
+.login-menu-item__input:focus{
+  outline: none;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2);
+}
+.login-menu-item__input_invalid{
+  border: solid 1px red;
+}
+.login-menu-loginbutton-container{
+  display: flex;
+}
+.login-menu-loginbutton{
+  cursor: pointer;
+  margin-top: 5px;
+  background: linear-gradient(180deg, var(--button-color1) 0%, var(--button-color2) 100%);
+  color: white;
+  border-radius: 5px;
+  border: solid 1px lightgray;
+  line-height: 25px;
+  width: 70px;
+}
+.login-menu-loginbutton:focus{
+  outline: none;
+  box-shadow: 1px 1px 5px 0px var(--button-color1);
+  border: solid 1px var(--button-color1);
+}
+.login-menu-loginbutton:hover{
+  filter: brightness(105%);
+}
+.login-menu-loginbutton:disabled{
+  filter: brightness(100%);
+}
+.login-menu-loginbutton:active{
+  box-shadow: none;
+  filter: brightness(90%);
+}
+.login-menu-loginbutton_disabled,.login-menu-loginbutton_disabled:hover{
+  cursor: default;
+  background: lightgray;
+  filter: brightness(100%);
+}
+.login-menu-loginbutton_waiting{
+  background-image:url("../../files/waiting.svg");
+  font-size: 0px;
+}
+.github-link{
+  color: gray;
+  text-decoration: none;
+}
+.github-link:hover{
+  filter: brightness(110%);
+  animation: github-link-anime 1s ease-in-out;
+}
+.github-link:focus{
+  outline: none;
+  text-shadow: 0 0 5px gray;
+}
+
+@keyframes github-link-anime{
+  from {text-shadow: 0 0 3px black;}
+  to {text-shadow: 0 0 100px black;}
+}
